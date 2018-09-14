@@ -1,0 +1,15 @@
+---------------------------public-----------------------
+include("config_public")
+---------------------------------------------------------
+
+start      = "main"
+logfile    = "gate.log"
+debugPort  = 7001
+luaservice = luaservice .. "../service/gateserver/?.lua;"
+cluster_server_id = 1
+
+websocket_test = true
+
+http_port = 6001
+watchdog_port = 5001
+wswatchdog_port = 5002

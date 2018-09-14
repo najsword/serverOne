@@ -1,0 +1,8 @@
+---------------------------public-----------------------
+include("config_public")
+---------------------------------------------------------
+
+start      = "main1"
+logfile    = "test.log"
+debugPort  = 7001
+luaservice = luaservice .. "../service/test/?.lua;"

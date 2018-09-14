@@ -1,0 +1,13 @@
+---------------------------public-----------------------
+include("config_public")
+---------------------------------------------------------
+
+start      = "main"
+logfile    = "auth.log"
+debugPort  = 7008
+luaservice = luaservice .. "../service/authserver/?.lua;"
+cluster_server_id = 8
+
+websocket_test = true
+watchdog_port = 5003
+auth_logic_count = 2

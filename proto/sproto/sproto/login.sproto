@@ -1,0 +1,41 @@
+.login {
+
+	.LoginReq {
+		account 0 : string #帐号
+		password 1 : string #密码
+        login_addr 2 : integer
+        subid 3 : integer
+		player_id 4 : integer
+	}
+
+	.LoginReply {
+
+	}
+
+	.LogoutReq {
+		
+	}
+
+	.LogoutReply {
+
+	}
+
+	.WeixinLoginReq {
+        login_addr 0 : integer
+        subid 1 : integer
+	}
+
+	.WeixinLoginReply {
+		
+	}
+
+	.VistorLoginReq {
+	    login_addr 0 : integer
+        subid 1 : integer
+	}
+
+	.VistorLoginReply {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+---------------------------public-----------------------
+include("config_public")
+---------------------------------------------------------
+
+start      = "main"
+logfile    = "chat.log"
+debugPort  = 7001
+cluster_server_id = 7
+luaservice = luaservice .. "../service/chatserver/?.lua;"
+
+chat_logic_count = 3

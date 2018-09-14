@@ -1,0 +1,12 @@
+.chat {
+	.ChatReq {
+        type 0 : integer
+	 	context 1 : string
+	}
+
+	.ChatEvent{
+	 	type 0 : integer
+        from 1 : integer
+	 	context 2 : string
+	}
+}

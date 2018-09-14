@@ -1,0 +1,9 @@
+---------------------------public-----------------------
+include("config_public")
+---------------------------------------------------------
+
+start      = "main"
+logfile    = "locator.log"
+debugPort  = 7005
+cluster_server_id = 6
+luaservice = luaservice .. "../service/locatorserver/?.lua;"

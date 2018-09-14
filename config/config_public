@@ -1,0 +1,29 @@
+root       = "../"
+skynetroot = "../skynet/"
+thread     = 4
+logger     = nil
+logpath    = "../log/"
+harbor     = 0      --0-单点 1-master slave
+bootstrap  = "snlua bootstrap"
+lualoader  = skynetroot.."lualib/loader.lua"
+preload    = root.."preload/preload.lua"
+
+
+-- C编写的服务模块路径
+cpath      = skynetroot.."cservice/?.so;"
+
+-- lua编写的服务模块路径
+luaservice = skynetroot.."service/?.lua;"..root.."service/?.lua;"
+
+-- lua动态库文件搜索路径,供require调用
+lua_cpath  = skynetroot.."luaclib/?.so;"
+
+-- lua文件搜索路径,供require调用
+lua_path   = skynetroot.."lualib/?.lua;"..
+			 root.."preload/?.lua;"..
+			 root.."common/?.lua;"..
+			 root.."lualib/?.lua;"..
+			 root.."logic/?.lua;"
+
+random_type = 2
+cluster_redis_id = 1

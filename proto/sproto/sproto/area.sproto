@@ -1,0 +1,27 @@
+.area {
+	.EnterAreaReq {
+        game_id 0 : integer
+	}
+
+    .ExitAreaReq {
+
+	}
+
+   .CreateRoleReq {
+        create_index 0 : integer #创建索引
+		nickname 1 : string #昵称
+	}
+
+    .GetRoleReq {
+	}
+
+    .EnterRoomReq {
+		roomtype 0 : integer
+	}
+
+    .EnterRoomReply{
+		room_id 0 : integer
+		roomproxy 1 : string
+	}
+
+}
