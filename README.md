@@ -1,4 +1,4 @@
-	模块分类
+﻿	模块分类
 实现模块
 基础服务：集群模块 消息处理模块  数据库模块
 gateserver: 网关模块 http模块 websocket模块 
@@ -17,6 +17,7 @@ AOI模块
 宕机重启  redis存放在线用户的rpc请求
 限流降级
 redis mysql事务
+
 -----------------------------------
 	使用
 下载
@@ -57,4 +58,3 @@ pkill -u `whoami` -xf "./skynet/skynet ./config/config_xpnn21 __default__"
 
 重启所有服务
 ./restart.sh
-
