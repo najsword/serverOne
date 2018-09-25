@@ -1,10 +1,10 @@
 [submodule "skynet"]
 	path = skynet
-	url = https://zhangshiqian1214@github.com/zhangshiqian1214/skynet.git
+	url = https://github.com/najsword/skynet.git
 [submodule "redis"]
 	path = redis
-	url = https://zhangshiqian1214@github.com/zhangshiqian1214/redis.git
+	url = https://github.com/najsword/redis.git
 	branch = 3.2
 [submodule "lsocket"]
 	path = lsocket
-	url = https://github.com/cloudwu/lsocket.git
+	url = https://github.com/najsword/lsocket.git
