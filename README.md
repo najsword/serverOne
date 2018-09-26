@@ -35,14 +35,17 @@
     
 -----------------------------------
 # 使用
-## 下载
+## 源码地址(了解)
     https://github.com/zhangshiqian1214/skynet-server
-## 修改：
+## 修改（了解）：
     1 顶层makefile添加lsocket库支持
     2 skynet makefile添加 skynet_crypt httppack add支持
     lualib-src/lua-crypt.c  lualib-src/lua-httppack.c  lualib-src/add.c
 
-## 安装
+## 安装(重要)
+    1 步骤就一步： cd serverOne; make all;
+    2 步骤解释：serverOne依赖skynet、redis、lsocket，makefile负责编译它们，同时需要安装mysql数据库。
+    3 编译遇到问题（提供参考，没有遇到则忽略）
     skynet: yum install dos2unix; yum install libcurl-dev libcurl-devel
     make socket  安装客户端lsocket
     问题： 安装 Redis 执行 make #error "Newer version of jemalloc required"
@@ -54,7 +57,9 @@
 
     测试cluster：1 ./run_test1.sh  ./run_test.sh
 
-## 运行
+## 运行服务端（重要）
+    执行步骤：./run_redis.sh; redis启动一次即可  ./restart.sh; 重复服务端命令
+    服务端操作相关：
     1 只启动gate login hall db服务，redis没有其他服务
     单服务启动
     ./run_redis.sh
@@ -62,14 +67,13 @@
     ./run_login.sh
     ./run_hall.sh
     ./run_db.sh
-    单服务停止
+    2 单服务停止
     pkill -u `whoami` -xf "./skynet/skynet ./config/config_xpnn __default__"
-    停止game服务
+    3 停止game服务
     pkill -u `whoami` -xf "./skynet/skynet ./config/config_xpnn21 __default__"
-    2 启动客户端
-    ./client.sh 1
-    控制台输入0   正常退出客户端
-    控制台ctrl+c  断线(socket直接断开)
 
-## 重启所有服务
-    ./restart.sh
+## 运行客户端（重要）
+    执行步骤： ./client.sh 1
+    客户端相关：
+    1 控制台输入0   正常退出客户端
+    2 控制台ctrl+c  断线(socket直接断开)
