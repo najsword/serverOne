@@ -73,7 +73,7 @@
     pkill -u `whoami` -xf "./skynet/skynet ./config/config_xpnn21 __default__"
 
 ## 运行客户端（重要）
-    执行步骤： ./client.sh 1
+    执行步骤： ./client.sh uid  uid是用户id可以是任何正整数,表示用户唯一标识，例如：./client.sh 1
     客户端相关：
     1 控制台输入0   正常退出客户端
     2 控制台ctrl+c  断线(socket直接断开)
